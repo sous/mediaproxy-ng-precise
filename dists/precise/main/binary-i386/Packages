@@ -1,0 +1,81 @@
+Package: ngcp-mediaproxy-ng
+Version: 2.3.0
+Architecture: all
+Maintainer: Sipwise Development Team <support@sipwise.com>
+Installed-Size: 25
+Depends: ngcp-mediaproxy-ng-daemon (>= 2.3.0), ngcp-mediaproxy-ng-iptables (>= 2.3.0), ngcp-mediaproxy-ng-kernel-dkms (>= 2.3.0)
+Homepage: http://sipwise.com/
+Priority: extra
+Section: net
+Filename: pool/main/n/ngcp-mediaproxy-ng/ngcp-mediaproxy-ng_2.3.0_all.deb
+Size: 26270
+SHA256: fc30528f0aa164cbd8487c1b576fd93806acacd7708531a9d64164cd0da148aa
+SHA1: 6066edab49f643ad73217ae0d28e509bf4e0babd
+MD5sum: 42dcf895a9e35d097ae2e4bab9be88f7
+Description: NGCP RTP/media proxy - meta package.
+ This is a meta package for easy installation of all three parts of the NGCP
+ media proxy. It will install the user-space daemon, the kernel-space IPtables
+ module, and the IPtables extension module.
+
+Package: ngcp-mediaproxy-ng-dev
+Source: ngcp-mediaproxy-ng
+Version: 2.3.0
+Architecture: all
+Maintainer: Sipwise Development Team <support@sipwise.com>
+Installed-Size: 85
+Homepage: http://sipwise.com/
+Priority: extra
+Section: libdevel
+Filename: pool/main/n/ngcp-mediaproxy-ng/ngcp-mediaproxy-ng-dev_2.3.0_all.deb
+Size: 42354
+SHA256: 8ac98cb8227fac5c652b1504b6b26ca3037a65f03db8c7a3aa6908d2f60dc177
+SHA1: 0e03919114dd37dfc989f178d073d4bd69ee1f3d
+MD5sum: 9c4f264a9acc2c81f38a8849ae262534
+Description: Development files for mediaproxy-ng
+ This package provides the header files of the mediaproxy-ng
+ software.
+ .
+ Install this package if you wish to develop your own programs using
+ mediaproxy-ng.
+
+Package: ngcp-mediaproxy-ng-kernel-dkms
+Source: ngcp-mediaproxy-ng
+Version: 2.3.0
+Architecture: all
+Maintainer: Sipwise Development Team <support@sipwise.com>
+Installed-Size: 77
+Depends: dkms (>= 1.95)
+Homepage: http://sipwise.com/
+Priority: extra
+Section: net
+Filename: pool/main/n/ngcp-mediaproxy-ng/ngcp-mediaproxy-ng-kernel-dkms_2.3.0_all.deb
+Size: 39962
+SHA256: f3ab2fcd90d4ee572766c096bab3794c07aa7125193a29d83aceb1ed16ea95cc
+SHA1: 48115a4718d134b0b9a473bfa53069e6b74d1f26
+MD5sum: 7017e83570ea9bd37da96f506c8386d8
+Description: IPtables kernel module for the NGCP media proxy - DKMS.
+ Provides the kernel-space part of the NGCP media proxy for high-
+ performance packet forwarding.
+ This package contains the source to be built with dkms.
+
+Package: ngcp-mediaproxy-ng-kernel-source
+Source: ngcp-mediaproxy-ng
+Version: 2.3.0
+Architecture: all
+Maintainer: Sipwise Development Team <support@sipwise.com>
+Installed-Size: 41
+Depends: debhelper (>= 5), module-assistant
+Homepage: http://sipwise.com/
+Priority: extra
+Section: net
+Filename: pool/main/n/ngcp-mediaproxy-ng/ngcp-mediaproxy-ng-kernel-source_2.3.0_all.deb
+Size: 42216
+SHA256: c53544763c9d6a75625e1cf64f025cf7f65f2cc7544995d53763f409b3cbc3dc
+SHA1: 196cf60d4ccfbc3989e2b0515b1e50fe4a6f0fed
+MD5sum: 1dc442d7f5707d8c73016771ac9d2cf3
+Description: IPtables kernel module for the NGCP media proxy - source.
+ Provides the kernel-space part of the NGCP media proxy for high-
+ performance packet forwarding.
+ This package contains the source to be built with module-assistant or
+ kernel-package.
+
